@@ -1,0 +1,2 @@
+#!/bin/bash
+wget 'http://www.wargamespace.com/feed/' -O /home/warthurton/Dropbox/Public/wargamespace.xml -q

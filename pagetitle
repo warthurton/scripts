@@ -1,0 +1,3 @@
+#!/bin/bash
+/usr/local/bin/wget/wget -qO- "$1" |
+  /usr/local/bin/gawk -v IGNORECASE=1 -v RS='</title' 'RT{gsub(/.*<title[^>]*>/,"");print;exit}'

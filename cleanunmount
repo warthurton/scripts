@@ -1,0 +1,6 @@
+#!/bin/bash
+
+if mount | grep -i /Volumes/$1 > /dev/null; then
+    hdiutil unmount /Volumes/$1
+fi
+exit 0
